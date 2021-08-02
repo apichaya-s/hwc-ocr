@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         // initialize HWOcrClientAKSK from ak,sk and endpoint information
         val hwOcrClientAKSK = HWOcrClientAKSK(this, ak, sk, region)
         // ocr service
-        val uri = "/v1.0/thailand-id-card"
+        val uri = "/v2/0cc4b36f1600f4012f15c010af45922a/ocr/thailand-id-card"
         val bitmap = binding.imageView.drawToBitmap()
         binding.txtResult.setText("Reading...")
 
